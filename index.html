@@ -35,7 +35,7 @@
 
   <h1>Privacy Policy</h1>
   <p class="subtitle"><strong>RMAN — AI Relationship Manager</strong></p>
-  <p class="last-updated"><strong>Last Updated: March 29, 2026</strong></p>
+  <p class="last-updated"><strong>Last Updated: April 27, 2026</strong></p>
 
   <hr>
 
@@ -47,10 +47,12 @@
 
   <h3>2.1 Information You Provide Directly</h3>
   <ul>
-    <li><strong>Account information</strong>: Your name, email address, and profile photo when you register or sign in (including via Facebook Login).</li>
+    <li><strong>Account information</strong>: Your name, email address, and profile photo when you register or sign in (including via Google Sign-In or Sign in with Apple on iOS).</li>
     <li><strong>Partner profiles</strong>: Names, relationship types, ages, interests, important dates, notes, and profile photos you add for people in your life.</li>
     <li><strong>AI conversation content</strong>: Messages, questions, and context you provide when interacting with Arman, our AI assistant. This content is sent to Google's Gemini API to generate suggestions and responses.</li>
     <li><strong>Todos and suggestions</strong>: Activity ideas, gift suggestions, date ideas, recipes, and other content you save or mark complete within the App.</li>
+    <li><strong>Shared links</strong>: URLs you share into RMAN from other apps (via the iOS Share Extension or Android share sheet). We extract and store metadata (title, description, preview image) for display within the App.</li>
+    <li><strong>Shared partner profiles</strong>: When you use the "Share a Person" feature, a sanitized snapshot of that partner's profile (name, relationship type, interests, location, and important dates — but not private notes, AI suggestions, or Memory Vault facts) is temporarily stored in our database and made accessible via a unique invite code. This snapshot is readable by anyone who has the code, including unauthenticated users viewing the web preview page. Shared profiles expire automatically after 30 days.</li>
   </ul>
 
   <h3>2.2 Information Collected Automatically</h3>
@@ -62,8 +64,13 @@
 
   <h3>2.3 Information from Third-Party Services</h3>
   <ul>
-    <li><strong>Facebook Login</strong>: If you sign in with Facebook, we receive your Facebook user ID, name, email address, and profile photo from Meta. We do not receive your Facebook friends list or any other Facebook data.</li>
+    <li><strong>Google Sign-In</strong>: If you sign in with Google, we receive your Google account name, email address, and profile photo. We do not receive access to other Google account data.</li>
+    <li><strong>Sign in with Apple</strong> <em>(iOS only)</em>: If you sign in with Apple, we receive your Apple-provided name and email address (Apple may relay a private email address at your option). We do not receive any other Apple account data.</li>
     <li><strong>Google Calendar</strong> <em>(if you grant permission)</em>: Upcoming calendar events to help surface relevant reminders. This data is read-only and is not stored on our servers.</li>
+    <li><strong>YouTube</strong>: The Partner Feed feature queries YouTube's Data API server-side using your partner's interests as search terms. We receive video titles, thumbnails, and channel names. Your identity is not shared with YouTube.</li>
+    <li><strong>Giphy</strong>: The Partner Feed may include GIFs sourced from the Giphy API, searched using your partner's interests. Your identity is not shared with Giphy.</li>
+    <li><strong>ZenQuotes</strong>: Inspirational quotes displayed in the Partner Feed are fetched from the ZenQuotes public API. No personal data is shared with ZenQuotes.</li>
+    <li><strong>Facebook (event metadata only)</strong>: If you share a Facebook event link into RMAN, our server-side function may query the Facebook Graph API to retrieve the event name, description, and cover image for display. Your Facebook credentials are not used for this — only our app's server-side access token is involved.</li>
   </ul>
 
   <h2>3. How We Use Your Information</h2>
@@ -100,9 +107,34 @@
         <td>AI suggestion generation</td>
       </tr>
       <tr>
-        <td><strong>Meta (Facebook)</strong></td>
-        <td>Authentication token</td>
-        <td>Sign-in via Facebook Login</td>
+        <td><strong>Google (Sign-In)</strong></td>
+        <td>Name, email, profile photo</td>
+        <td>Sign-in via Google</td>
+      </tr>
+      <tr>
+        <td><strong>Apple</strong> (iOS only)</td>
+        <td>Name, email (or relayed address)</td>
+        <td>Sign in with Apple</td>
+      </tr>
+      <tr>
+        <td><strong>YouTube (Google)</strong></td>
+        <td>Partner interests (as search queries)</td>
+        <td>Partner Feed video content</td>
+      </tr>
+      <tr>
+        <td><strong>Giphy</strong></td>
+        <td>Partner interests (as search queries)</td>
+        <td>Partner Feed GIF content</td>
+      </tr>
+      <tr>
+        <td><strong>ZenQuotes</strong></td>
+        <td>None</td>
+        <td>Partner Feed quotes</td>
+      </tr>
+      <tr>
+        <td><strong>Meta (Facebook Graph API)</strong></td>
+        <td>Facebook event ID (when you share a Facebook event link)</td>
+        <td>Fetch event name, description, and image for display</td>
       </tr>
       <tr>
         <td><strong>Law enforcement / legal process</strong></td>
@@ -209,7 +241,7 @@
   <p>We aim to respond to all inquiries within <strong>5 business days</strong>.</p>
 
   <hr>
-  <p style="color: #888; font-size: 0.85em;">This Privacy Policy applies to the RMAN mobile application (com.mitchell.rman) available on Google Play.</p>
+  <p style="color: #888; font-size: 0.85em;">This Privacy Policy applies to the RMAN mobile application (com.mitchell.rman) available on Google Play and the Apple App Store.</p>
 
 </body>
 </html>
