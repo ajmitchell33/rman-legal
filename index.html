@@ -35,7 +35,7 @@
 
   <h1>Privacy Policy</h1>
   <p class="subtitle"><strong>RMAN — AI Relationship Manager</strong></p>
-  <p class="last-updated"><strong>Last Updated: April 27, 2026</strong></p>
+  <p class="last-updated"><strong>Last Updated: May 3, 2026</strong></p>
 
   <hr>
 
@@ -71,6 +71,7 @@
     <li><strong>Giphy</strong>: The Partner Feed may include GIFs sourced from the Giphy API, searched using your partner's interests. Your identity is not shared with Giphy.</li>
     <li><strong>ZenQuotes</strong>: Inspirational quotes displayed in the Partner Feed are fetched from the ZenQuotes public API. No personal data is shared with ZenQuotes.</li>
     <li><strong>Facebook (event metadata only)</strong>: If you share a Facebook event link into RMAN, our server-side function may query the Facebook Graph API to retrieve the event name, description, and cover image for display. Your Facebook credentials are not used for this — only our app's server-side access token is involved.</li>
+    <li><strong>memegen.link (meme generation, Pro only)</strong>: When you use the Meme feature, meme images are rendered via the memegen.link public API. The meme template name and text strings you or Arman provide are sent to memegen.link to generate the image. No personal account information, partner names, or profile data is transmitted — only the meme template and text content.</li>
   </ul>
 
   <h2>3. How We Use Your Information</h2>
@@ -80,8 +81,8 @@
     <li><strong>Power the AI (Arman)</strong>: Your partner profiles, interests, notes, and conversation messages are sent to <strong>Google's Gemini API</strong> to generate contextually relevant suggestions. Google processes these prompts subject to their own terms and privacy policy.</li>
     <li><strong>Sync your data</strong>: Your profiles, suggestions, and saved content are stored in <strong>Firebase Firestore</strong> and <strong>Firebase Storage</strong> so your data is available across devices and is not lost if you reinstall the App.</li>
     <li><strong>Improve the App</strong>: Aggregated, anonymized analytics data (via Firebase Analytics) helps us understand how the App is used and where to improve.</li>
-    <li><strong>Send notifications</strong>: With your permission, we may send push notifications for daily suggestion reminders and important date reminders.</li>
-    <li><strong>Authenticate your identity</strong>: Firebase Auth and Facebook Login are used to securely identify you and protect your account.</li>
+    <li><strong>Send notifications</strong>: With your permission, we may send push notifications, including: daily suggestion reminders, important date reminders, and a one-time re-engagement message sent approximately 22 hours after you add your first partner (containing an AI-generated personal message from Arman). You can disable notifications at any time in your device settings.</li>
+    <li><strong>Authenticate your identity</strong>: Firebase Authentication is used to securely identify you and protect your account.</li>
   </ul>
   <p>We do <strong>not</strong> use your data to serve third-party advertising. We do <strong>not</strong> sell your personal information.</p>
 
@@ -135,6 +136,11 @@
         <td><strong>Meta (Facebook Graph API)</strong></td>
         <td>Facebook event ID (when you share a Facebook event link)</td>
         <td>Fetch event name, description, and image for display</td>
+      </tr>
+      <tr>
+        <td><strong>memegen.link</strong></td>
+        <td>Meme template name and text strings (Pro feature only)</td>
+        <td>Render meme images; no personal or profile data transmitted</td>
       </tr>
       <tr>
         <td><strong>Law enforcement / legal process</strong></td>
